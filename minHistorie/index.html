@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Setting innerHTML and textContent</title>
+        <style>
+            .catcolors {
+                color: orange;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="heading">All about <span class="animal">dog</span>s</h1>
+        
+        <p>The domestic <span class="animal">dog</span> is known as man's best friend. The <span class="animal">dog</span> was the first domesticated animal and has been widely kept as a working, hunting, and pet companion. According to recent coarse estimates, there are currently between 700 million and one billion <span class="animal">dog</span>s, making them the most abundant predators in the world. <a href="http://en.wikipedia.org/wiki/Dog">Read more on Wikipedia</a>.</p>
+        
+        <img src="https://www.kasandbox.org/programming-images/animals/dog_sleeping-puppy.png" height="150">
+        
+        <img src="https://www.kasandbox.org/programming-images/animals/dogs_collies.png" height="150">
+        
+        <script>
+            let dyr = document.getElementsByClassName("animal");
+            
+
+            
+            for(let i = 0; i < dyr.length; i++){
+                dyr[i].innerHTML = "<strong>cat</strong>";
+                console.log(dyr[i]);
+            }
+            
+            
+            
+        </script>
+        
+    </body>
+</html>
